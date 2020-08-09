@@ -21,6 +21,10 @@ Microphone: MH-ET LIVE Omnidirectional Microphone Module I2S Interface INMP441 M
 |D23| -> SCK|
 |GND| -> L/R|
 
+## Project Photo
+#### Display type: The set up
+![Overview](/dBmeterESP32.jpg?raw=true "Included assets")
+![In MQTT Explorer](/dBmeter_in_MQTT.png?raw=true "Included assets")
 
 
 
