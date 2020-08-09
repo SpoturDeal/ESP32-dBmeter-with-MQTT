@@ -21,10 +21,25 @@ Microphone: MH-ET LIVE Omnidirectional Microphone Module I2S Interface INMP441 M
 |D23| -> SCK|
 |GND| -> L/R|
 
+## How to start ##
+
+1. Use Visual Basic Studio
+2. add PlatformIO
+3. start a new project
+4. Choose a name
+5. Platform DOIT ESP32 DEVKIT 1
+6. When project is made copy files to src folder
+7. Copy the platformio.ini file to \  (to have proper libraries installed)
+8. Changes lines 20 to 25 in main.cpp according your network and MQTT
+9. Compile and upload.
+
+
 ## Project Photo
 #### Display type: The set up
 ![Overview](/dBmeterESP32.jpg?raw=true "Included assets")
-![In MQTT Explorer](/dBmeter_in_MQTT.png?raw=true "Included assets")
+![In MQTT Explorer](/dBlevel_in_MQTT.png?raw=true "Included assets")
+![In Serial Monitor](/Serial_monitor.png?raw=true "Included assets")
+
 
 
 
