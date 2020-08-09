@@ -39,7 +39,7 @@ double dBdifference = 1.5;
 #define DB_UNITS          "dBA"       // customize based on above weighting used
 
 // NOTE: Some microphones require at least DC-Blocker filter
-#define MIC_EQUALIZER     ICS43434    // See below for defined IIR filters or set to 'None' to disable
+#define MIC_EQUALIZER     INMP441     // See below for defined IIR filters or set to 'None' to disable
 #define MIC_OFFSET_DB     3.0103      // Default offset (sine-wave RMS vs. dBFS). Modify this value for linear calibration
 
 // Customize these values from microphone datasheet
