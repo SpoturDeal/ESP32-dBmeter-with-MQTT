@@ -44,7 +44,7 @@ Microphone: MH-ET LIVE Omnidirectional Microphone Module I2S Interface INMP441 M
 
 ## MIT License
 
-Copyright (c) 2020 SpoturDeal | Carl
+Copyright (c) 2020 SpoturDeal | Charley
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
