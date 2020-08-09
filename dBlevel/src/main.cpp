@@ -17,11 +17,11 @@
  //
  // Configuration added for MQTT and Wifi
  //
-#define SSID "Knollentuin"
-#define PASW "wezen#!loos"
-#define USER_MQTT "admin"
-#define PASW_MQTT "9298ckno1011"
-#define IP_MQTT "192.168.178.188"
+#define SSID "**********"
+#define PASW "**********"
+#define USER_MQTT "***********"
+#define PASW_MQTT "**************"
+#define IP_MQTT "192.168.000.000"
 #define PORT_MQTT 1883
 int connectCount = 0;
 int tryConnectSTA = 0;
