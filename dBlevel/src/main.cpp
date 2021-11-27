@@ -26,7 +26,7 @@
 int connectCount = 0;
 int tryConnectSTA = 0;
 double baseDB = 0;
-double dBdifference = 1.5;
+double dBdifference = 1.0;  // increease if you want reporting less sensible
 
 
 //
@@ -461,7 +461,7 @@ void setup() {
 
             // Serial output, customize (or remove) as needed
             Serial.printf("%.1f\n", Leq_dB);
-
+            mqttClient.loop(); 
             if (abs(Leq_dB-baseDB) > dBdifference) {
                 if (!mqttClient.connected())
                 {
@@ -472,6 +472,13 @@ void setup() {
                 mqttClient.beginPublish("dBmeter/soundlevel", msgLen, true);
                 mqttClient.print(msgOne);
                 mqttClient.endPublish();
+                // publish rssi if you have connection issues
+                String strValue = (String) WiFi.RSSI();
+                msgLen = strValue.length();
+                mqttClient.beginPublish("dBmeter/rssi", msgLen, true);
+                mqttClient.print(strValue);
+                mqttClient.endPublish();
+             
                 baseDB=Leq_dB;
             }
             // Debug only
