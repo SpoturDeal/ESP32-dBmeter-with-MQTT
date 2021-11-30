@@ -283,7 +283,6 @@ void setupWifi() {
     Serial.println("WiFi connected");
     Serial.println("IP address: ");
     Serial.println(WiFi.localIP());
-    mqttClient.setServer(IP_MQTT, PORT_MQTT);
 
 }
 
@@ -415,7 +414,9 @@ void setup() {
 
 
     delay(1000); // Safety
-
+    mqttClient.setSocketTimeout(30);
+    mqttClient.setKeepAlive(30);
+    mqttClient.setServer(IP_MQTT, PORT_MQTT);
 
 
     // Create FreeRTOS queue
